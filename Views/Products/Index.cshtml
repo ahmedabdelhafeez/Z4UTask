@@ -1,0 +1,46 @@
+﻿@using Task.EFCore.Models
+@model List<Product>
+@{
+    ViewData["Title"] = "Products";
+}
+<div class="container">
+    <div class="mat-elevation-z8">
+
+        <div class="row mb-2">
+            <input class=" col form-control"  (keyup)="applyFilter($event)" placeholder="Search">
+            <div class="col">
+                <button class="addBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">أضافة</button>
+            </div>
+        </div>
+
+        <table id="ProductsTable" class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model!=null)
+                @foreach(var product in Model)
+                {
+                    <tr id="id-@product.ID">
+                        <td>@product.Name</td>
+                        <td>@product.Category</td>
+                        <td>@product.Price</td>
+                        <td>@product.Description</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@await Html.PartialAsync("_AddProduct", new Product());
+<!-- Modal -->
+
+@section Scripts{
+	<script src="~/js/products.js"></script>
+};

@@ -1,0 +1,42 @@
+﻿@using Task.Domain.Services.AuthDomain.Models
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="row">
+    <div class="col-6 m-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                Login
+            </div>
+            <div class="card-body">
+                <form asp-action="Login" enctype="multipart/form-data" class="form">
+   
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+ 
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"> </label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label"> </label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12 mt-2">Login</button>
+                </form>
+
+                <a class=" mt-2 link-primary " asp-action="Register" asp-route-returnUrl="@ViewBag.ReturnUrl">Register as a new user</a>
+ 
+            </div>
+        </div>
+    </div>
+    </div>
+    @section Scripts {
+
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
