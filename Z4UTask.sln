@@ -5,11 +5,9 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Z4UTask", "Z4UTask.csproj", "{B2873C07-5B28-46CB-8888-9397B44EAAA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Domain", "..\Task.Domain\Task.Domain.csproj", "{E0523855-DB94-49D2-9DE0-29929963721C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task", "..\Task\Task.csproj", "{57DD41FE-368E-4CED-8002-9D6C43841528}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.EFCore", "..\Task.EFCore\Task.EFCore.csproj", "{695C62D0-EF93-4ACC-9FA7-D4D4CB709F5D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizooHelper", "..\FizooHelper\FizooHelper.csproj", "{7DF7A474-3494-4C8A-BF1F-4CAC8B947F0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizooHelper", "..\FizooHelper\FizooHelper.csproj", "{08FDC15E-8F83-40FB-A714-D14BA55EF8E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		{B2873C07-5B28-46CB-8888-9397B44EAAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2873C07-5B28-46CB-8888-9397B44EAAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2873C07-5B28-46CB-8888-9397B44EAAA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0523855-DB94-49D2-9DE0-29929963721C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0523855-DB94-49D2-9DE0-29929963721C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0523855-DB94-49D2-9DE0-29929963721C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0523855-DB94-49D2-9DE0-29929963721C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{695C62D0-EF93-4ACC-9FA7-D4D4CB709F5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{695C62D0-EF93-4ACC-9FA7-D4D4CB709F5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{695C62D0-EF93-4ACC-9FA7-D4D4CB709F5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{695C62D0-EF93-4ACC-9FA7-D4D4CB709F5D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DF7A474-3494-4C8A-BF1F-4CAC8B947F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DF7A474-3494-4C8A-BF1F-4CAC8B947F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DF7A474-3494-4C8A-BF1F-4CAC8B947F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DF7A474-3494-4C8A-BF1F-4CAC8B947F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DD41FE-368E-4CED-8002-9D6C43841528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DD41FE-368E-4CED-8002-9D6C43841528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DD41FE-368E-4CED-8002-9D6C43841528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DD41FE-368E-4CED-8002-9D6C43841528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FDC15E-8F83-40FB-A714-D14BA55EF8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FDC15E-8F83-40FB-A714-D14BA55EF8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FDC15E-8F83-40FB-A714-D14BA55EF8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FDC15E-8F83-40FB-A714-D14BA55EF8E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

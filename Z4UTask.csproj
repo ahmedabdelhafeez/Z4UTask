@@ -15,11 +15,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FizooHelper\FizooHelper.csproj" />
-    <ProjectReference Include="..\Task.Domain\Task.Domain.csproj" />
-    <ProjectReference Include="..\Task.EFCore\Task.EFCore.csproj" />
-  </ItemGroup>
 
 
 </Project>
